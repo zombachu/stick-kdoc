@@ -1,0 +1,14 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:stick-core
+com.zombachu.stick
+com.zombachu.stick.element
+com.zombachu.stick.element.parameters
+com.zombachu.stick.feedback
+com.zombachu.stick.impl
+com.zombachu.stick.structure
+module:stick-paper
+com.zombachu.stick.paper
+module:stick-velocity
+com.zombachu.stick.velocity

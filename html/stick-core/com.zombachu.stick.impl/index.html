@@ -1,0 +1,632 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.zombachu.stick.impl</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../index.html">
+                    stick
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stick-core:dokkaHtmlPartial/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":stick-core:dokkaHtmlPartial/main" data-filter=":stick-core:dokkaHtmlPartial/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    stick
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="stick-core::com.zombachu.stick.impl////PointingToDeclaration//-1904854388">
+  <div class="breadcrumbs"><a href="../index.html">stick-core</a><span class="delimiter">/</span><span class="current">com.zombachu.stick.impl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-510391647%2FClasslikes%2F-1904854388" anchor-label="Array" id="-510391647%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array/index.html"><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-510391647%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array/index.html">Array</a><span class="token operator">&lt;</span><a href="-array/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-array/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-801716847%2FClasslikes%2F-1904854388" anchor-label="Array0" id="-801716847%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array0/index.html"><span><span>Array0</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-801716847%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array0/index.html">Array0</a><span class="token operator">&lt;</span><a href="-array0/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple0/index.html">Tuple0</a><span class="token operator">&lt;</span><a href="-array0/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-770697040%2FClasslikes%2F-1904854388" anchor-label="Array1" id="-770697040%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array1/index.html"><span><span>Array1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-770697040%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array1/index.html">Array1</a><span class="token operator">&lt;</span><a href="-array1/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple1/index.html">Tuple1</a><span class="token operator">&lt;</span><a href="-array1/index.html">T</a><span class="token punctuation">, </span><a href="-array1/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-281249438%2FClasslikes%2F-1904854388" anchor-label="Array10" id="-281249438%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array10/index.html"><span><span>Array10</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-281249438%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array10/index.html">Array10</a><span class="token operator">&lt;</span><a href="-array10/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple10/index.html">Tuple10</a><span class="token operator">&lt;</span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token punctuation">, </span><a href="-array10/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-250229631%2FClasslikes%2F-1904854388" anchor-label="Array11" id="-250229631%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array11/index.html"><span><span>Array11</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-250229631%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array11/index.html">Array11</a><span class="token operator">&lt;</span><a href="-array11/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple11/index.html">Tuple11</a><span class="token operator">&lt;</span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token punctuation">, </span><a href="-array11/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-219209824%2FClasslikes%2F-1904854388" anchor-label="Array12" id="-219209824%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array12/index.html"><span><span>Array12</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-219209824%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array12/index.html">Array12</a><span class="token operator">&lt;</span><a href="-array12/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple12/index.html">Tuple12</a><span class="token operator">&lt;</span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token punctuation">, </span><a href="-array12/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-739677233%2FClasslikes%2F-1904854388" anchor-label="Array2" id="-739677233%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array2/index.html"><span><span>Array2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739677233%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array2/index.html">Array2</a><span class="token operator">&lt;</span><a href="-array2/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple2/index.html">Tuple2</a><span class="token operator">&lt;</span><a href="-array2/index.html">T</a><span class="token punctuation">, </span><a href="-array2/index.html">T</a><span class="token punctuation">, </span><a href="-array2/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-708657426%2FClasslikes%2F-1904854388" anchor-label="Array3" id="-708657426%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array3/index.html"><span><span>Array3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-708657426%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array3/index.html">Array3</a><span class="token operator">&lt;</span><a href="-array3/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple3/index.html">Tuple3</a><span class="token operator">&lt;</span><a href="-array3/index.html">T</a><span class="token punctuation">, </span><a href="-array3/index.html">T</a><span class="token punctuation">, </span><a href="-array3/index.html">T</a><span class="token punctuation">, </span><a href="-array3/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-677637619%2FClasslikes%2F-1904854388" anchor-label="Array4" id="-677637619%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array4/index.html"><span><span>Array4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-677637619%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array4/index.html">Array4</a><span class="token operator">&lt;</span><a href="-array4/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple4/index.html">Tuple4</a><span class="token operator">&lt;</span><a href="-array4/index.html">T</a><span class="token punctuation">, </span><a href="-array4/index.html">T</a><span class="token punctuation">, </span><a href="-array4/index.html">T</a><span class="token punctuation">, </span><a href="-array4/index.html">T</a><span class="token punctuation">, </span><a href="-array4/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-646617812%2FClasslikes%2F-1904854388" anchor-label="Array5" id="-646617812%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array5/index.html"><span><span>Array5</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-646617812%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array5/index.html">Array5</a><span class="token operator">&lt;</span><a href="-array5/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple5/index.html">Tuple5</a><span class="token operator">&lt;</span><a href="-array5/index.html">T</a><span class="token punctuation">, </span><a href="-array5/index.html">T</a><span class="token punctuation">, </span><a href="-array5/index.html">T</a><span class="token punctuation">, </span><a href="-array5/index.html">T</a><span class="token punctuation">, </span><a href="-array5/index.html">T</a><span class="token punctuation">, </span><a href="-array5/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-615598005%2FClasslikes%2F-1904854388" anchor-label="Array6" id="-615598005%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array6/index.html"><span><span>Array6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-615598005%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array6/index.html">Array6</a><span class="token operator">&lt;</span><a href="-array6/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple6/index.html">Tuple6</a><span class="token operator">&lt;</span><a href="-array6/index.html">T</a><span class="token punctuation">, </span><a href="-array6/index.html">T</a><span class="token punctuation">, </span><a href="-array6/index.html">T</a><span class="token punctuation">, </span><a href="-array6/index.html">T</a><span class="token punctuation">, </span><a href="-array6/index.html">T</a><span class="token punctuation">, </span><a href="-array6/index.html">T</a><span class="token punctuation">, </span><a href="-array6/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-584578198%2FClasslikes%2F-1904854388" anchor-label="Array7" id="-584578198%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array7/index.html"><span><span>Array7</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-584578198%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array7/index.html">Array7</a><span class="token operator">&lt;</span><a href="-array7/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple7/index.html">Tuple7</a><span class="token operator">&lt;</span><a href="-array7/index.html">T</a><span class="token punctuation">, </span><a href="-array7/index.html">T</a><span class="token punctuation">, </span><a href="-array7/index.html">T</a><span class="token punctuation">, </span><a href="-array7/index.html">T</a><span class="token punctuation">, </span><a href="-array7/index.html">T</a><span class="token punctuation">, </span><a href="-array7/index.html">T</a><span class="token punctuation">, </span><a href="-array7/index.html">T</a><span class="token punctuation">, </span><a href="-array7/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-553558391%2FClasslikes%2F-1904854388" anchor-label="Array8" id="-553558391%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array8/index.html"><span><span>Array8</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-553558391%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array8/index.html">Array8</a><span class="token operator">&lt;</span><a href="-array8/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple8/index.html">Tuple8</a><span class="token operator">&lt;</span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token punctuation">, </span><a href="-array8/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-522538584%2FClasslikes%2F-1904854388" anchor-label="Array9" id="-522538584%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array9/index.html"><span><span>Array9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-522538584%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-array9/index.html">Array9</a><span class="token operator">&lt;</span><a href="-array9/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-tuple9/index.html">Tuple9</a><span class="token operator">&lt;</span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token punctuation">, </span><a href="-array9/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-38610633%2FClasslikes%2F-1904854388" anchor-label="Requirement" id="-38610633%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-requirement/index.html"><span><span>Requirement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-38610633%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-requirement/index.html">Requirement</a><span class="token operator">&lt;</span><a href="-requirement/index.html">S</a><span class="token operator">&gt;</span> : <a href="../../stick-core/com.zombachu.stick.element/-sender-validator/index.html">SenderValidator</a><span class="token operator">&lt;</span><a href="-requirement/index.html">S</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1414256603%2FClasslikes%2F-1904854388" anchor-label="SenderScope" id="1414256603%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sender-scope/index.html"><span>Sender</span><wbr><span><span>Scope</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1414256603%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-sender-scope/index.html">SenderScope</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="-sender-scope/index.html">S</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1403089017%2FClasslikes%2F-1904854388" anchor-label="Size" id="-1403089017%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-size/index.html"><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1403089017%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-size/index.html">Size</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2017434623%2FClasslikes%2F-1904854388" anchor-label="StructureElement" id="2017434623%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-structure-element/index.html"><span>Structure</span><wbr><span><span>Element</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2017434623%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-structure-element/index.html">StructureElement</a><span class="token operator">&lt;</span><a href="-structure-element/index.html">S</a><span class="token punctuation">, </span><a href="-structure-element/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><a href="-structure-scope/index.html">StructureScope</a><span class="token operator">&lt;</span><a href="-structure-element/index.html">S</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-structure-element/index.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1025292839%2FClasslikes%2F-1904854388" anchor-label="StructureScope" id="1025292839%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-structure-scope/index.html"><span>Structure</span><wbr><span><span>Scope</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1025292839%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-structure-scope/index.html">StructureScope</a><span class="token operator">&lt;</span><a href="-structure-scope/index.html">S</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>aliases<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>parent<span class="token operator">: </span><a href="-structure-scope/index.html">StructureScope</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">requirement<span class="token operator">: </span><a href="-requirement/index.html">Requirement</a><span class="token operator">&lt;</span><a href="-structure-scope/index.html">S</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-sender-scope/index.html">SenderScope</a><span class="token operator">&lt;</span><a href="-structure-scope/index.html">S</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-634150894%2FClasslikes%2F-1904854388" anchor-label="Tuple" id="-634150894%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple/index.html"><span><span>Tuple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-634150894%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-343286208%2FClasslikes%2F-1904854388" anchor-label="Tuple0" id="-343286208%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple0/index.html"><span><span>Tuple0</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-343286208%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple0/index.html">Tuple0</a><span class="token operator">&lt;</span><a href="-tuple0/index.html">T</a><span class="token operator">&gt;</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple0/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-312266401%2FClasslikes%2F-1904854388" anchor-label="Tuple1" id="-312266401%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple1/index.html"><span><span>Tuple1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-312266401%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple1/index.html">Tuple1</a><span class="token operator">&lt;</span><a href="-tuple1/index.html">T</a><span class="token punctuation">, </span><a href="-tuple1/index.html">A</a><span class="token operator"> : </span><a href="-tuple1/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple1/index.html">A</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple1/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1045198483%2FClasslikes%2F-1904854388" anchor-label="Tuple10" id="1045198483%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple10/index.html"><span><span>Tuple10</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1045198483%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple10/index.html">Tuple10</a><span class="token operator">&lt;</span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">A</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">B</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">C</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">D</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">E</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">F</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">G</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">S</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">I</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token punctuation">, </span><a href="-tuple10/index.html">J</a><span class="token operator"> : </span><a href="-tuple10/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple10/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple10/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple10/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple10/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple10/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>f<span class="token operator">: </span><a href="-tuple10/index.html">F</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>g<span class="token operator">: </span><a href="-tuple10/index.html">G</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>h<span class="token operator">: </span><a href="-tuple10/index.html">S</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>i<span class="token operator">: </span><a href="-tuple10/index.html">I</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>j<span class="token operator">: </span><a href="-tuple10/index.html">J</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple10/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1076218290%2FClasslikes%2F-1904854388" anchor-label="Tuple11" id="1076218290%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple11/index.html"><span><span>Tuple11</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1076218290%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple11/index.html">Tuple11</a><span class="token operator">&lt;</span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">A</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">B</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">C</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">D</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">E</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">F</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">G</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">S</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">I</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">J</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token punctuation">, </span><a href="-tuple11/index.html">K</a><span class="token operator"> : </span><a href="-tuple11/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple11/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple11/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple11/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple11/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple11/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>f<span class="token operator">: </span><a href="-tuple11/index.html">F</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>g<span class="token operator">: </span><a href="-tuple11/index.html">G</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>h<span class="token operator">: </span><a href="-tuple11/index.html">S</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>i<span class="token operator">: </span><a href="-tuple11/index.html">I</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>j<span class="token operator">: </span><a href="-tuple11/index.html">J</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>k<span class="token operator">: </span><a href="-tuple11/index.html">K</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple11/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1107238097%2FClasslikes%2F-1904854388" anchor-label="Tuple12" id="1107238097%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple12/index.html"><span><span>Tuple12</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1107238097%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple12/index.html">Tuple12</a><span class="token operator">&lt;</span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">A</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">B</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">C</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">D</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">E</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">F</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">G</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">S</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">I</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">J</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">K</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token punctuation">, </span><a href="-tuple12/index.html">L</a><span class="token operator"> : </span><a href="-tuple12/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple12/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple12/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple12/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple12/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple12/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>f<span class="token operator">: </span><a href="-tuple12/index.html">F</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>g<span class="token operator">: </span><a href="-tuple12/index.html">G</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>h<span class="token operator">: </span><a href="-tuple12/index.html">S</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>i<span class="token operator">: </span><a href="-tuple12/index.html">I</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>j<span class="token operator">: </span><a href="-tuple12/index.html">J</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>k<span class="token operator">: </span><a href="-tuple12/index.html">K</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>l<span class="token operator">: </span><a href="-tuple12/index.html">L</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple12/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-281246594%2FClasslikes%2F-1904854388" anchor-label="Tuple2" id="-281246594%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple2/index.html"><span><span>Tuple2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-281246594%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple2/index.html">Tuple2</a><span class="token operator">&lt;</span><a href="-tuple2/index.html">T</a><span class="token punctuation">, </span><a href="-tuple2/index.html">A</a><span class="token operator"> : </span><a href="-tuple2/index.html">T</a><span class="token punctuation">, </span><a href="-tuple2/index.html">B</a><span class="token operator"> : </span><a href="-tuple2/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple2/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple2/index.html">B</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple2/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-250226787%2FClasslikes%2F-1904854388" anchor-label="Tuple3" id="-250226787%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple3/index.html"><span><span>Tuple3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-250226787%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple3/index.html">Tuple3</a><span class="token operator">&lt;</span><a href="-tuple3/index.html">T</a><span class="token punctuation">, </span><a href="-tuple3/index.html">A</a><span class="token operator"> : </span><a href="-tuple3/index.html">T</a><span class="token punctuation">, </span><a href="-tuple3/index.html">B</a><span class="token operator"> : </span><a href="-tuple3/index.html">T</a><span class="token punctuation">, </span><a href="-tuple3/index.html">C</a><span class="token operator"> : </span><a href="-tuple3/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple3/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple3/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple3/index.html">C</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple3/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-219206980%2FClasslikes%2F-1904854388" anchor-label="Tuple4" id="-219206980%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple4/index.html"><span><span>Tuple4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-219206980%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple4/index.html">Tuple4</a><span class="token operator">&lt;</span><a href="-tuple4/index.html">T</a><span class="token punctuation">, </span><a href="-tuple4/index.html">A</a><span class="token operator"> : </span><a href="-tuple4/index.html">T</a><span class="token punctuation">, </span><a href="-tuple4/index.html">B</a><span class="token operator"> : </span><a href="-tuple4/index.html">T</a><span class="token punctuation">, </span><a href="-tuple4/index.html">C</a><span class="token operator"> : </span><a href="-tuple4/index.html">T</a><span class="token punctuation">, </span><a href="-tuple4/index.html">D</a><span class="token operator"> : </span><a href="-tuple4/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple4/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple4/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple4/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple4/index.html">D</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple4/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-188187173%2FClasslikes%2F-1904854388" anchor-label="Tuple5" id="-188187173%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple5/index.html"><span><span>Tuple5</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-188187173%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple5/index.html">Tuple5</a><span class="token operator">&lt;</span><a href="-tuple5/index.html">T</a><span class="token punctuation">, </span><a href="-tuple5/index.html">A</a><span class="token operator"> : </span><a href="-tuple5/index.html">T</a><span class="token punctuation">, </span><a href="-tuple5/index.html">B</a><span class="token operator"> : </span><a href="-tuple5/index.html">T</a><span class="token punctuation">, </span><a href="-tuple5/index.html">C</a><span class="token operator"> : </span><a href="-tuple5/index.html">T</a><span class="token punctuation">, </span><a href="-tuple5/index.html">D</a><span class="token operator"> : </span><a href="-tuple5/index.html">T</a><span class="token punctuation">, </span><a href="-tuple5/index.html">E</a><span class="token operator"> : </span><a href="-tuple5/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple5/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple5/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple5/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple5/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple5/index.html">E</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple5/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-157167366%2FClasslikes%2F-1904854388" anchor-label="Tuple6" id="-157167366%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple6/index.html"><span><span>Tuple6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-157167366%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple6/index.html">Tuple6</a><span class="token operator">&lt;</span><a href="-tuple6/index.html">T</a><span class="token punctuation">, </span><a href="-tuple6/index.html">A</a><span class="token operator"> : </span><a href="-tuple6/index.html">T</a><span class="token punctuation">, </span><a href="-tuple6/index.html">B</a><span class="token operator"> : </span><a href="-tuple6/index.html">T</a><span class="token punctuation">, </span><a href="-tuple6/index.html">C</a><span class="token operator"> : </span><a href="-tuple6/index.html">T</a><span class="token punctuation">, </span><a href="-tuple6/index.html">D</a><span class="token operator"> : </span><a href="-tuple6/index.html">T</a><span class="token punctuation">, </span><a href="-tuple6/index.html">E</a><span class="token operator"> : </span><a href="-tuple6/index.html">T</a><span class="token punctuation">, </span><a href="-tuple6/index.html">F</a><span class="token operator"> : </span><a href="-tuple6/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple6/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple6/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple6/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple6/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple6/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>f<span class="token operator">: </span><a href="-tuple6/index.html">F</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple6/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-126147559%2FClasslikes%2F-1904854388" anchor-label="Tuple7" id="-126147559%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple7/index.html"><span><span>Tuple7</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-126147559%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple7/index.html">Tuple7</a><span class="token operator">&lt;</span><a href="-tuple7/index.html">T</a><span class="token punctuation">, </span><a href="-tuple7/index.html">A</a><span class="token operator"> : </span><a href="-tuple7/index.html">T</a><span class="token punctuation">, </span><a href="-tuple7/index.html">B</a><span class="token operator"> : </span><a href="-tuple7/index.html">T</a><span class="token punctuation">, </span><a href="-tuple7/index.html">C</a><span class="token operator"> : </span><a href="-tuple7/index.html">T</a><span class="token punctuation">, </span><a href="-tuple7/index.html">D</a><span class="token operator"> : </span><a href="-tuple7/index.html">T</a><span class="token punctuation">, </span><a href="-tuple7/index.html">E</a><span class="token operator"> : </span><a href="-tuple7/index.html">T</a><span class="token punctuation">, </span><a href="-tuple7/index.html">F</a><span class="token operator"> : </span><a href="-tuple7/index.html">T</a><span class="token punctuation">, </span><a href="-tuple7/index.html">G</a><span class="token operator"> : </span><a href="-tuple7/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple7/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple7/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple7/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple7/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple7/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>f<span class="token operator">: </span><a href="-tuple7/index.html">F</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>g<span class="token operator">: </span><a href="-tuple7/index.html">G</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple7/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-95127752%2FClasslikes%2F-1904854388" anchor-label="Tuple8" id="-95127752%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple8/index.html"><span><span>Tuple8</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-95127752%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple8/index.html">Tuple8</a><span class="token operator">&lt;</span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">A</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">B</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">C</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">D</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">E</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">F</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">G</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token punctuation">, </span><a href="-tuple8/index.html">S</a><span class="token operator"> : </span><a href="-tuple8/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple8/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple8/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple8/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple8/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple8/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>f<span class="token operator">: </span><a href="-tuple8/index.html">F</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>g<span class="token operator">: </span><a href="-tuple8/index.html">G</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>h<span class="token operator">: </span><a href="-tuple8/index.html">S</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple8/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-64107945%2FClasslikes%2F-1904854388" anchor-label="Tuple9" id="-64107945%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tuple9/index.html"><span><span>Tuple9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-64107945%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tuple9/index.html">Tuple9</a><span class="token operator">&lt;</span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">A</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">B</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">C</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">D</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">E</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">F</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">G</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">S</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token punctuation">, </span><a href="-tuple9/index.html">I</a><span class="token operator"> : </span><a href="-tuple9/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>a<span class="token operator">: </span><a href="-tuple9/index.html">A</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>b<span class="token operator">: </span><a href="-tuple9/index.html">B</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>c<span class="token operator">: </span><a href="-tuple9/index.html">C</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>d<span class="token operator">: </span><a href="-tuple9/index.html">D</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>e<span class="token operator">: </span><a href="-tuple9/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>f<span class="token operator">: </span><a href="-tuple9/index.html">F</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>g<span class="token operator">: </span><a href="-tuple9/index.html">G</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>h<span class="token operator">: </span><a href="-tuple9/index.html">S</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>i<span class="token operator">: </span><a href="-tuple9/index.html">I</a></span></span><span class="token punctuation">)</span> : <a href="-tuple/index.html">Tuple</a><span class="token operator">&lt;</span><a href="-tuple9/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1702485237%2FClasslikes%2F-1904854388" anchor-label="ValidatedDefault" id="1702485237%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-validated-default/index.html"><span>Validated</span><wbr><span><span>Default</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1702485237%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-validated-default/index.html">ValidatedDefault</a><span class="token operator">&lt;</span><a href="-validated-default/index.html">S</a><span class="token punctuation">, </span><a href="-validated-default/index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.zombachu.stick/-contextual-value/index.html">ContextualValue</a><span class="token operator">&lt;</span><a href="-validated-default/index.html">S</a><span class="token punctuation">, </span><a href="-validated-default/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>validate<span class="token operator">: </span><span class="token punctuation">(</span><a href="-validated-default/index.html">S</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../com.zombachu.stick/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../../stick-core/com.zombachu.stick.element/-sender-validator/index.html">SenderValidator</a><span class="token operator">&lt;</span><a href="-validated-default/index.html">S</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

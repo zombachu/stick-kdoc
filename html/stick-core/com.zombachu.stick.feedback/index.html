@@ -1,0 +1,606 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.zombachu.stick.feedback</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../index.html">
+                    stick
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":stick-core:dokkaHtmlPartial/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":stick-core:dokkaHtmlPartial/main" data-filter=":stick-core:dokkaHtmlPartial/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    stick
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="stick-core::com.zombachu.stick.feedback////PointingToDeclaration//-1904854388">
+  <div class="breadcrumbs"><a href="../index.html">stick-core</a><span class="delimiter">/</span><span class="current">com.zombachu.stick.feedback</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-921376031%2FClasslikes%2F-1904854388" anchor-label="ErrorMessages" id="-921376031%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-error-messages/index.html"><span>Error</span><wbr><span><span>Messages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-921376031%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-error-messages/index.html">ErrorMessages</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-73741784%2FClasslikes%2F-1904854388" anchor-label="Feedback" id="-73741784%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback/index.html"><span><span>Feedback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-73741784%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="-feedback/index.html">N</a><span class="token operator"> : </span><a href="../com.zombachu.stick.impl/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-150472982%2FClasslikes%2F-1904854388" anchor-label="Feedback0" id="-150472982%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback0/index.html"><span><span>Feedback0</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-150472982%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback0/index.html">Feedback0</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array0/index.html">Array0</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-119453175%2FClasslikes%2F-1904854388" anchor-label="Feedback1" id="-119453175%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback1/index.html"><span><span>Feedback1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-119453175%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback1/index.html">Feedback1</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array1/index.html">Array1</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1567526103%2FClasslikes%2F-1904854388" anchor-label="Feedback10" id="-1567526103%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback10/index.html"><span><span>Feedback10</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1567526103%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback10/index.html">Feedback10</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array10/index.html">Array10</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1536506296%2FClasslikes%2F-1904854388" anchor-label="Feedback11" id="-1536506296%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback11/index.html"><span><span>Feedback11</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1536506296%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback11/index.html">Feedback11</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array11/index.html">Array11</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1505486489%2FClasslikes%2F-1904854388" anchor-label="Feedback12" id="-1505486489%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback12/index.html"><span><span>Feedback12</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1505486489%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback12/index.html">Feedback12</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array12/index.html">Array12</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-88433368%2FClasslikes%2F-1904854388" anchor-label="Feedback2" id="-88433368%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback2/index.html"><span><span>Feedback2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-88433368%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback2/index.html">Feedback2</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array2/index.html">Array2</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-57413561%2FClasslikes%2F-1904854388" anchor-label="Feedback3" id="-57413561%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback3/index.html"><span><span>Feedback3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-57413561%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback3/index.html">Feedback3</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array3/index.html">Array3</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-26393754%2FClasslikes%2F-1904854388" anchor-label="Feedback4" id="-26393754%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback4/index.html"><span><span>Feedback4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26393754%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback4/index.html">Feedback4</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array4/index.html">Array4</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="4626053%2FClasslikes%2F-1904854388" anchor-label="Feedback5" id="4626053%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback5/index.html"><span><span>Feedback5</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="4626053%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback5/index.html">Feedback5</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array5/index.html">Array5</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="35645860%2FClasslikes%2F-1904854388" anchor-label="Feedback6" id="35645860%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback6/index.html"><span><span>Feedback6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="35645860%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback6/index.html">Feedback6</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array6/index.html">Array6</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="66665667%2FClasslikes%2F-1904854388" anchor-label="Feedback7" id="66665667%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback7/index.html"><span><span>Feedback7</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="66665667%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback7/index.html">Feedback7</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array7/index.html">Array7</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="97685474%2FClasslikes%2F-1904854388" anchor-label="Feedback8" id="97685474%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback8/index.html"><span><span>Feedback8</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="97685474%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback8/index.html">Feedback8</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array8/index.html">Array8</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="128705281%2FClasslikes%2F-1904854388" anchor-label="Feedback9" id="128705281%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback9/index.html"><span><span>Feedback9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="128705281%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-feedback9/index.html">Feedback9</a><span class="token operator"> = </span><a href="-feedback/index.html">Feedback</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array9/index.html">Array9</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1610409901%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage" id="-1610409901%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message/index.html"><span>Feedback</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1610409901%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="-feedback-message/index.html">N</a><span class="token operator"> : </span><a href="../com.zombachu.stick.impl/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-542544353%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage0" id="-542544353%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message0/index.html"><span>Feedback</span><wbr><span><span>Message0</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-542544353%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message0/index.html">FeedbackMessage0</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array0/index.html">Array0</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-511524546%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage1" id="-511524546%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message1/index.html"><span>Feedback</span><wbr><span><span>Message1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-511524546%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message1/index.html">FeedbackMessage1</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array1/index.html">Array1</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-836836716%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage10" id="-836836716%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message10/index.html"><span>Feedback</span><wbr><span><span>Message10</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-836836716%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message10/index.html">FeedbackMessage10</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array10/index.html">Array10</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-805816909%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage11" id="-805816909%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message11/index.html"><span>Feedback</span><wbr><span><span>Message11</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-805816909%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message11/index.html">FeedbackMessage11</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array11/index.html">Array11</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-774797102%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage12" id="-774797102%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message12/index.html"><span>Feedback</span><wbr><span><span>Message12</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-774797102%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message12/index.html">FeedbackMessage12</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array12/index.html">Array12</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-480504739%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage2" id="-480504739%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message2/index.html"><span>Feedback</span><wbr><span><span>Message2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-480504739%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message2/index.html">FeedbackMessage2</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array2/index.html">Array2</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-449484932%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage3" id="-449484932%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message3/index.html"><span>Feedback</span><wbr><span><span>Message3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-449484932%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message3/index.html">FeedbackMessage3</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array3/index.html">Array3</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-418465125%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage4" id="-418465125%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message4/index.html"><span>Feedback</span><wbr><span><span>Message4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-418465125%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message4/index.html">FeedbackMessage4</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array4/index.html">Array4</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-387445318%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage5" id="-387445318%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message5/index.html"><span>Feedback</span><wbr><span><span>Message5</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-387445318%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message5/index.html">FeedbackMessage5</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array5/index.html">Array5</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-356425511%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage6" id="-356425511%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message6/index.html"><span>Feedback</span><wbr><span><span>Message6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-356425511%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message6/index.html">FeedbackMessage6</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array6/index.html">Array6</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-325405704%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage7" id="-325405704%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message7/index.html"><span>Feedback</span><wbr><span><span>Message7</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-325405704%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message7/index.html">FeedbackMessage7</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array7/index.html">Array7</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-294385897%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage8" id="-294385897%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message8/index.html"><span>Feedback</span><wbr><span><span>Message8</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-294385897%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message8/index.html">FeedbackMessage8</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array8/index.html">Array8</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-263366090%2FClasslikes%2F-1904854388" anchor-label="FeedbackMessage9" id="-263366090%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback-message9/index.html"><span>Feedback</span><wbr><span><span>Message9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-263366090%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-feedback-message9/index.html">FeedbackMessage9</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="../com.zombachu.stick.impl/-array9/index.html">Array9</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1908153179%2FClasslikes%2F-1904854388" anchor-label="ParsingFailureHandler" id="-1908153179%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-parsing-failure-handler/index.html"><span>Parsing</span><wbr><span>Failure</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1908153179%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-parsing-failure-handler/index.html">ParsingFailureHandler</a><span class="token operator">&lt;</span><a href="-parsing-failure-handler/index.html">S</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1791705364%2FClasslikes%2F-1904854388" anchor-label="PreformattedFeedbackMessage" id="-1791705364%2FClasslikes%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-preformatted-feedback-message/index.html"><span>Preformatted</span><wbr><span>Feedback</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1791705364%2FClasslikes%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-preformatted-feedback-message/index.html">PreformattedFeedbackMessage</a><span class="token operator">&lt;</span><a href="-preformatted-feedback-message/index.html">N</a><span class="token operator"> : </span><a href="../com.zombachu.stick.impl/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-feedback-message/index.html">FeedbackMessage</a><span class="token operator">&lt;</span><a href="-preformatted-feedback-message/index.html">N</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="773686727%2FFunctions%2F-1904854388" anchor-label="Feedback0" id="773686727%2FFunctions%2F-1904854388" data-filterable-set=":stick-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":stick-core:dokkaHtmlPartial/main" data-filterable-set=":stick-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feedback0.html"><span><span>Feedback0</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="773686727%2FFunctions%2F-1904854388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":stick-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-feedback0.html"><span class="token function">Feedback0</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-feedback0/index.html">Feedback0</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
