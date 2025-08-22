@@ -1,1 +1,0 @@
-sourceset_dependencies = '{":stick-velocity:dokkaHtmlPartial/main":[],":stick-paper:dokkaHtmlPartial/main":[],":stick-core:dokkaHtmlPartial/main":[]}'
